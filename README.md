@@ -42,4 +42,6 @@ After following these steps, the resources provisioned for the Super Mario game 
 
 This deployment not only brings back the nostalgia of 90's gaming but also showcases the capabilities of Kubernetes for orchestrating and managing containerized applications on cloud infrastructure. So, grab your controllers, dive into the nostalgic world of Mario, and enjoy the game!
 
+The architecture runs two replicas of the Mario container behind an AWS LoadBalancer Service, giving you a public URL to play the game with built-in redundancy. All infrastructure is defined as code in Terraform, so the entire stack — cluster, node group, IAM roles, and Kubernetes resources — can be provisioned and torn down with a single command.
+
 This is an official image by MR CLOUD BOOK available on Docker Hub as sevenajay/mario:latest.
